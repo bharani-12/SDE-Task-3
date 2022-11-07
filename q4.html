@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var holdCabinet1 = ['duct tape', 'gum', 3.14, false, 6.022e23];
+    var holdCabinet2 = ['orange drink', 'nerf toys', 'camera', 42, 'parsnip'];
+    var newarray = holdCabinet1.concat(holdCabinet2);
+    document.write(holdCabinet1);
+    document.write("<br>CANNOT MODIFY AFTER CONCAT METHOD<br>");
+    document.write(newarray + "<br>");
+    var newarray1 = holdCabinet1.slice(1, 3);
+    var newarray2 = holdCabinet2.slice(1, 3);
+    document.write(newarray1 + "<br>" + newarray2 + "<br>" + holdCabinet1 + "<br>" + holdCabinet2 + "<br>");
+    document.write("SLICE METHOD DOES NOT AFFECT THE ORGINAL ARRAY <br>");
+    holdCabinet1.reverse();
+    holdCabinet2.sort();
+    document.write(holdCabinet1 + "<br>" + holdCabinet2);
+    document.write("<br>REVERSE AND SORT METHOD  AFFECT THE ORGINAL ARRAY <br>");
+</script>
+
+<body>
+
+</body>
+
+</html>

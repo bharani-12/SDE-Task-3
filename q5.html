@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var str = 'In space, no one can hear you code.';
+    document.write(str.split() + "<br>DOES NOT DO ANY MODIFICATION<BR>");
+    document.write(str.split('e') + "<br>IT SPLIT WITH COMMAS WHERE 'e' PRESENT<BR>");
+    document.write(str.split(' ') + "<br>IT SPLIT WITH COMMAS WHERE ' ' PRESENT<BR>");
+    document.write(str.split('') + "<br>IT SPLIT EACH LETTER WITH COMMAS<BR>");
+    document.write("<br>");
+    var arr = ['B', 'n', 'n', 5];
+    document.write(arr.join() + "<br>DOES NOT DO ANY MODIFICATION<BR>");
+    document.write(arr.join('a') + "<br>IT JOIN WITH 'a' ALL ARRAY ELEMENTS<BR>");
+    document.write(arr.join(' ') + "<br>IT JOIN WITH ' ' ALL ARRAY ELEMENTS<BR>");
+    document.write(arr.join('') + "<br>IT JOIN  ALL ARRAY ELEMENTS<BR>");
+    document.write("<br>" + str + "<br>" + arr + "<br>");
+    document.write("IT WILL NOT CHANGE THE ORGINAL ARRAY<br>");
+    var a = "water,space suits,food,plasma sword,batteries";
+    document.write(a.split(',').join(''));
+</script>
+
+<body>
+
+</body>
+
+</html>

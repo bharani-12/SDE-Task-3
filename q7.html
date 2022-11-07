@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let people = ["Greg", "Mary", "Devon", "James"];
+    people.shift();
+    document.write(people + "<br>");
+    people.pop();
+    document.write(people + "<br>");
+    people.unshift("Matt");
+    document.write(people + "<br>");
+    people.push('Bharani');
+    document.write(people + "<br>");
+    let i = 0;
+    while (i != people.indexOf("Mary") + 1) {
+        console.log(people[i]);
+        document.write(people[i] + " ");
+        i++;
+    }
+    let a = [];
+    for (let i = 0; i < people.length; i++) {
+        if (people[i] == "Mary" || people[i] == "Matt") {
+            continue;
+        }
+        else {
+            a.push(people[i]);
+        }
+    }
+    document.write("<br>" + a + "<br>");
+    document.write(people.indexOf('Mary') + "<br>");
+    document.write(people.indexOf('Foo') + "<br>");
+    people.splice(2, 1, "Elizabeth", "article");
+    document.write(people + "<br>");
+    let withbob = people;
+    document.write(people + "<br>" + withbob);
+</script>
+
+<body>
+</body>
+
+</html>

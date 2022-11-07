@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var cargoHold = ['oxygen tanks', 'space suits', 'parrot', 'instruction manual', 'meal packs', 'slinky', 'security blanket'];
+    document.write(cargoHold);
+    cargoHold.splice(3, 0, "keys");
+    document.write("<br> insert array element at index 3  <br>");
+    document.write(cargoHold);
+    cargoHold.splice(cargoHold.indexOf('instruction manual'), 1);
+    document.write("<br> removing instruction manual in array <br>");
+    document.write(cargoHold);
+    document.write("<br> replace element at index 2-4<br>");
+    cargoHold.splice(2, 3, 'cat', 'fob', 'string cheese');
+    document.write(cargoHold);
+</script>
+
+<body>
+</body>
+
+</html>
